@@ -1,3 +1,10 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+
+
 namespace DesafioProjetoHospedagem.Models;
 
 public class Pessoa
@@ -15,7 +22,7 @@ public class Pessoa
         Sobrenome = sobrenome;
     }
 
-    public string Nome { get; set; }
+    public string Nome { get; set; } 
     public string Sobrenome { get; set; }
     public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
 }
